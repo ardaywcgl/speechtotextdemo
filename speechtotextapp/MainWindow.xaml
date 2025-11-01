@@ -1,0 +1,13 @@
+﻿<Window x:Class="SpeechToTextApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Speech To Text" Height="300" Width="500">
+    <Grid Margin="10">
+        <TextBox x:Name="txtOutput" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto"
+                 IsReadOnly="True" TextWrapping="Wrap"/>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <Button x:Name="btnStart" Content="Başlat" Width="100" Margin="5" Click="BtnStart_Click"/>
+            <Button x:Name="btnStop" Content="Durdur" Width="100" Margin="5" Click="BtnStop_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
